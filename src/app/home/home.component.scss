@@ -1,0 +1,120 @@
+section {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+}
+
+.welcomeSec {
+  // background-image: linear-gradient(
+  //     rgba(24, 24, 27, 0.363),
+  //     rgba(24, 24, 27, 0.336)
+  //   ),
+  //   url("/assets/imgs/2f242895-e89a-44d3-9f8a-fb78b32d80c5.png");
+
+  background-image: url("/assets/imgs/2f242895-e89a-44d3-9f8a-fb78b32d80c5.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.continar {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 120px;
+}
+
+.continar img {
+  width: 290px;
+  height: 600px;
+}
+
+.continar .mainText {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.continar h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: 820;
+}
+
+.continar p {
+  color: white;
+  padding-top: 25px;
+  font-size: 19px;
+  font-weight: 580;
+}
+
+.mainText button {
+  background-color: #191c1f;
+  color: white;
+  padding: 10px 24px;
+  line-height: 1.375rem;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+// -------- partners section --------
+.partners .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.partners h1 {
+  padding: 60px 20px 10px;
+  font-size: 40px;
+}
+
+.partners h1 span {
+  background: linear-gradient(
+    279deg,
+    rgb(64, 85, 255) 0%,
+    rgb(105, 122, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.partners h2 {
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #3a3d41;
+}
+.logos {
+  padding: 80px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(0-100%);
+  }
+}
+
+.slider {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slider 16s infinite linear;
+}
+.slider img {
+  height: 70px;
+  margin: 0 55px;
+}

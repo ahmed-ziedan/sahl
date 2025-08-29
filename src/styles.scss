@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+.cairo-uniquifier {
+  font-family: "Cairo", sans-serif;
+  font-weight: 500; // يمكنك تغيير الوزن حسب الحاجة، مثلاً 500 أو 700
+  font-style: normal;
+}
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
