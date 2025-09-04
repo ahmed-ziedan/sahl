@@ -1,16 +1,10 @@
 section {
   width: 100%;
   height: 100%;
-  height: 100vh;
+  height: 92vh;
 }
 
 .welcomeSec {
-  // background-image: linear-gradient(
-  //     rgba(24, 24, 27, 0.363),
-  //     rgba(24, 24, 27, 0.336)
-  //   ),
-  //   url("/assets/imgs/2f242895-e89a-44d3-9f8a-fb78b32d80c5.png");
-
   background-image: url("/assets/imgs/2f242895-e89a-44d3-9f8a-fb78b32d80c5.png");
 
   background-size: cover;
@@ -33,7 +27,6 @@ section {
 .continar .mainText {
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
 }
 
@@ -52,6 +45,7 @@ section {
 
 .mainText button {
   background-color: #191c1f;
+
   color: white;
   padding: 10px 24px;
   line-height: 1.375rem;
@@ -78,7 +72,7 @@ section {
   font-size: 40px;
 }
 
-.partners h1 span {
+h1 span {
   background: linear-gradient(
     279deg,
     rgb(64, 85, 255) 0%,
@@ -95,11 +89,7 @@ section {
   padding-bottom: 10px;
   color: #3a3d41;
 }
-.logos {
-  padding: 80px 0;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 @keyframes slider {
   from {
     transform: translateX(0);
@@ -109,12 +99,269 @@ section {
   }
 }
 
-.slider {
-  display: inline-block;
+/**/
+.logos {
+  overflow: hidden;
+  padding: 80px 0;
+  background: white;
   white-space: nowrap;
-  animation: slider 16s infinite linear;
+  position: relative;
 }
-.slider img {
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slider 21s infinite linear;
+}
+
+.logos-slide img {
   height: 70px;
   margin: 0 55px;
+}
+// -------- services section --------
+.services {
+  height: fit-content;
+}
+.services .secOne {
+  height: 80vh;
+
+  background-color: rgb(99, 117, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.services .text {
+  color: white;
+  font-size: 20px;
+}
+.services text h1 {
+  font-size: 22px;
+}
+.services .text h1 span {
+  background: linear-gradient(
+    279deg,
+    rgb(188, 196, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.services .text button {
+  background-color: #191c1f;
+
+  color: white;
+  padding: 10px 24px;
+  line-height: 1.375rem;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+.services .secOne .img img {
+  margin-top: 42px;
+}
+.services .img img {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  height: 72vh;
+
+  // border-radius: 10px;
+  // box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+// // --------sec 2 -------
+.services .secTwo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 70px;
+  background-color: white;
+}
+.services .secTwo .text {
+  color: rgb(0, 0, 0);
+}
+.services .secTwo .text h1 span {
+  background: linear-gradient(
+    279deg,
+    rgb(64, 85, 255) 0%,
+    rgb(105, 122, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.services .secTwo .img img {
+  //   // border-radius: 10px;
+  //   // box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  padding-right: 80px;
+}
+// -------- About -----
+#aboutSec {
+  padding: 65px;
+}
+#aboutSec .text {
+  text-align: center;
+  max-width: 80ch;
+  line-height: 1.7;
+}
+#aboutSec .text h1 {
+  padding-bottom: 29px;
+}
+#aboutSec .text p {
+  font-size: 21px;
+  font-weight: 600;
+}
+#aboutSec .text p span {
+  background: linear-gradient(
+    279deg,
+    rgb(64, 85, 255) 0%,
+    rgb(105, 122, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: #191c1f;
+  border-bottom: rgba(255, 255, 255, 0.849) 0.2px solid;
+  border-top: rgb(255, 255, 255, 0.849) 0.2px solid;
+
+  color: white;
+  padding: 7px 17px;
+  line-height: 1.375rem;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+
+  &:hover {
+    opacity: 0.85;
+    bottom: 35px;
+  }
+}
+// *************RESPONSIVE***********
+@media (width<1085px) {
+  .continar img {
+    display: none;
+  }
+}
+
+@media (width<1000px) {
+  .continar img {
+    display: none;
+  }
+  .continar {
+    padding: 50px 51px;
+  }
+
+  .continar .mainText h1 {
+    // font-size: 45px;
+    line-height: 1;
+  }
+}
+
+@media (width<765px) {
+  .services .secOne,
+  .services .secTwo {
+    display: block;
+
+    text-align: center;
+    height: fit-content;
+  }
+  .services .text {
+    padding-top: 25px;
+  }
+}
+
+@media (width<690px) {
+  .partners h2 {
+    font-size: 20px;
+  }
+
+  .logos:before,
+  .logos:after {
+    width: 100px;
+  }
+  .services .secTwo {
+    padding: 0;
+  }
+  .services .secTwo .text {
+    padding: 26px;
+  }
+  .services .secTwo .text h1 {
+    padding: 15px 40px;
+    line-height: 1.3;
+  }
+}
+
+@media (width<609px) {
+  .continar .mainText p {
+    line-height: 1.4;
+  }
+
+  .partners {
+    height: 82vh;
+  }
+  .partners h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+  }
+  .services .text {
+    font-size: 17.5px;
+  }
+  .services .img img {
+    height: 52vh;
+
+    // border-radius: 10px;
+    // box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .services .secTwo .img img {
+    padding-right: 0;
+  }
+
+  #aboutSec {
+    padding: 40px 20px;
+  }
 }

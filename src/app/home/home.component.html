@@ -3,18 +3,13 @@
     <div class="continar">
       <div class="mainText">
         <h1>CHANGE THE WAY YOU MONEY</h1>
-        <!-- <p>
-          Sahl is the first mobile app that allows you to charge your
-          electricity card directly from<br />
-          your phone in less than a minute by using the NFC technology.
-        </p> -->
         <p>
           You can pay for all your services in one place with any payment method
           you prefer<br />
           Visa, MasterCard, Meeza, Wallets. Payment trends can be tracked <br />
           by accessing and reviewing your old receipts
         </p>
-        <button>Download the app</button>
+        <button routerLink="/download">Download the app</button>
       </div>
       <div>
         <img
@@ -29,7 +24,7 @@
       <h2>Join 40+ million customers worldwide and 11+ million in the Egypt</h2>
     </div>
     <div class="logos">
-      <div class="slider">
+      <div class="logos-slide">
         <img
           src="https://framerusercontent.com/images/WqTuInSJFtrZmlQ7HuGz10aFViY.png?scale-down-to=512"
         />
@@ -52,7 +47,8 @@
           src="https://framerusercontent.com/images/XWezJ50Ybee55FgUKysys0cU.png"
         />
       </div>
-      <div class="slider">
+
+      <div class="logos-slide">
         <img
           src="https://framerusercontent.com/images/WqTuInSJFtrZmlQ7HuGz10aFViY.png?scale-down-to=512"
         />
@@ -76,5 +72,98 @@
         />
       </div>
     </div>
+    <!-- <div class="logos">
+      <div class="slider">
+
+      </div>
+      <div class="slider">
+        <img
+          src="https://framerusercontent.com/images/WqTuInSJFtrZmlQ7HuGz10aFViY.png?scale-down-to=512"
+        />
+        <img
+          src="https://framerusercontent.com/images/YCI7VF5pCZ525S9WNT9a0GXeU.png"
+        />
+        <img
+          src="https://framerusercontent.com/images/qS0mvjsw3EHmyqVRo65LFdTinXk.png?scale-down-to=512"
+        />
+        <img
+          src="https://framerusercontent.com/images/GwQHzjNDcThrVvSKugSiBor1YPU.png"
+        />
+        <img
+          src="https://framerusercontent.com/images/xuB398aqpByvSx1LRij7TMbbBO8.png?scale-down-to=512"
+        />
+        <img
+          src="https://framerusercontent.com/images/lU1CH8fI8ePqNsiMsewgrIJfA.png?scale-down-to=512"
+        />
+        <img
+          src="https://framerusercontent.com/images/XWezJ50Ybee55FgUKysys0cU.png"
+        />
+      </div>
+    </div> -->
+  </section>
+  <section class="services">
+    <div class="secOne">
+      <div class="text">
+        <h1>Charge <span>Anytime/Anywhere</span></h1>
+        <p>
+          All Sahl services are accessible 24 hours a day<br />
+          7 days a week, for all users across Egypt
+        </p>
+        <button routerLink="/download">Try Now</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://framerusercontent.com/images/h0Cfqr8valbLKKBsQFH3VBZcpM.png?scale-down-to=1024"
+        />
+      </div>
+    </div>
+    <div class="secTwo">
+      <div class="text">
+        <h1>All Your Payments in <span>One Place</span></h1>
+        <p>
+          You can pay for all your services in one place with<br />
+          any payment method you prefer (Visa, MasterCard, Meeza, Wallets)
+        </p>
+        <button routerLink="/download">Try Now</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://framerusercontent.com/images/VPU8onclRLQCpJkbp9mligje7KY.png"
+        />
+      </div>
+    </div>
+    <div class="secOne">
+      <div class="text">
+        <h1>Track Your <span> Payment Trend</span></h1>
+        <p>
+          Payment trends can be tracked by accessing and <br />
+          reviewing your old receipts
+        </p>
+        <button routerLink="/download">Try Now</button>
+      </div>
+      <div class="img">
+        <img
+          src="https://framerusercontent.com/images/xCBXMa4pnZ8uh7GW3VHzqBxw1N8.png?scale-down-to=512"
+        />
+      </div>
+    </div>
+    <div class="secTwo" id="aboutSec">
+      <div class="text">
+        <h1>Who Are <span>We?</span></h1>
+        <p>
+          Sahl is a mobile bill payment app in Egypt, offering users the
+          convenience of <span>paying bills</span> for over 50 services
+          including electricity, gas, water, and mobile. We use
+          <span>NFC</span> technology to allow users to recharge prepaid cards
+          anytime, anywhere. Additionally, we've launched
+          <span>B2B</span> products to expand our audience by providing utility
+          services and payment acceptance to other companies.
+        </p>
+        <button routerLink="/contact">Contact Us</button>
+      </div>
+    </div>
   </section>
 </div>
+<button id="backToTop" (click)="scrollToTop()" *ngIf="showScrollButton">
+  <i class="fa-regular fa-circle-up" style="font-size: 19px"></i>
+</button>

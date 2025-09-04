@@ -1,3 +1,53 @@
 * {
-  background-color: #000000;
+  background-color: rgb(28, 28, 28);
+}
+.footer {
+  padding: 28px;
+  height: fit-content;
+  width: 100%;
+}
+.copyLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.copy {
+  color: #ffffff;
+  font-size: 15px;
+}
+.copy span {
+  color: rgb(105, 122, 255);
+  font-size: 17Spx;
+}
+i {
+  color: white;
+}
+.linksList {
+  list-style: none;
+}
+.link {
+  display: inline-block;
+  padding: 0px 13px;
+  font-size: 21px;
+}
+.link a i {
+  transition: all 0.3s ease;
+}
+.link a i:hover {
+  color: rgb(140, 153, 255);
+}
+.footer .text p {
+  color: #c0c0c0;
+  padding: 10px;
+}
+@media (width<690px) {
+  .copyLine {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .linksList {
+    padding-top: 10px;
+  }
 }

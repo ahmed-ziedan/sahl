@@ -1,6 +1,10 @@
 .header {
   background-color: rgb(255, 255, 255);
-  outline: rgb(184, 184, 184) solid 0.5px;
+  outline: rgb(206, 206, 206) solid 0.1px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px 0 #4d39ff;
 }
 
 a {
@@ -63,16 +67,9 @@ nav {
 }
 
 button {
-  // margin: 12px;
-  // padding: 0.5rem 1rem;
-  // font-size: 1.1rem;
-  // font-weight: 600;
-  // color: white;
-  // background-color: #171717;
-  // border-radius: 8px;
-  // cursor: pointer;
-  // transition: all 1 ease;
-  background-color: #191c1f;
+  // background-color: #191c1f;
+
+  background-color: rgb(99, 117, 255);
   color: white;
   padding: 10px 24px;
   line-height: 1.375rem;
@@ -85,7 +82,7 @@ button {
 }
 
 .sign button:hover {
-  background-color: #464646;
+  background-color: rgb(46, 67, 221);
 }
 #login {
   font-size: 1rem;
@@ -177,5 +174,10 @@ button {
   }
   .collapse.toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+@media (width<690px) {
+  nav {
+    padding: 10px 5px;
   }
 }
