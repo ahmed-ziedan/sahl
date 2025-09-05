@@ -67,6 +67,7 @@ section {
   }
 }
 // -------- partners section --------
+
 .partners .text {
   display: flex;
   justify-content: center;
@@ -192,6 +193,7 @@ h1 span {
 }
 .services .secOne .img img {
   margin-top: 42px;
+  max-width: 360px;
 }
 .services .img img {
   padding: 0;
