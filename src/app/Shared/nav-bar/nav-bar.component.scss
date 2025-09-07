@@ -3,7 +3,7 @@
   outline: rgb(206, 206, 206) solid 0.1px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 200;
   box-shadow: 0 0 10px 0 #4d39ff;
 }
 
@@ -162,7 +162,7 @@ button {
   .collapse {
     display: block;
     position: relative;
-    z-index: 1001;
+    z-index: 2000;
     cursor: pointer;
   }
 

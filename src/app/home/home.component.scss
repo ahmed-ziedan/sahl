@@ -272,6 +272,10 @@ h1 span {
     bottom: 35px;
   }
 }
+
+#backToTop {
+  z-index: 150;
+}
 // *************RESPONSIVE***********
 @media (width<1085px) {
   .continar img {
