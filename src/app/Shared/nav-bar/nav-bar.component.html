@@ -2,25 +2,26 @@
   <nav>
     <div class="navLogo">
       <img src="/assets/imgs/smallLogo.png" alt="RePay logo" />
-      <a href="#">Sahl</a>
+      <a routerLink="/home">Sahl</a>
     </div>
     <ul class="navLinks" [class.active]="isMenuOpen">
       <li class="link">
-        <a href="#" (click)="closeMenu()">Home</a>
+        <a routerLink="/home" (click)="closeMenu()">Home</a>
       </li>
       <li class="link">
-        <a href="#" (click)="closeMenu()">Services</a>
+        <a routerLink="/services" (click)="closeMenu()">Services</a>
       </li>
       <li class="link">
-        <a href="#" (click)="closeMenu()">About Us</a>
+        <a routerLink="/about" (click)="closeMenu()">About Us</a>
       </li>
       <li class="link">
         <a routerLink="/contact" (click)="closeMenu()">Contact Us</a>
       </li>
     </ul>
     <div class="sign" [class.active]="isMenuOpen">
-      <button id="login">Login</button>
-      <button>Sign Up</button>
+      <a style="text-decoration: none; color: white" routerLink="/download-app"
+        ><button>Download the app</button></a
+      >
     </div>
 
     <div class="collapse" (click)="toggleMenu()" [class.toggle]="isMenuOpen">

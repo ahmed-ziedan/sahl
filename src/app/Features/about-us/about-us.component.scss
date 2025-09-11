@@ -1,0 +1,108 @@
+$gradient-color: linear-gradient(
+  279deg,
+  rgb(64, 85, 255) 0%,
+  rgb(105, 122, 255) 100%
+);
+.aboutPage {
+  padding: 55px;
+}
+.genAbout {
+  margin-top: 20px;
+  margin-bottom: 37px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.genAbout h1,
+.genAbout p {
+  text-align: center;
+  max-width: 95ch;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.genAbout h1 span {
+  // margin-left: 1px;
+  background: $gradient-color;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.genAbout p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.genAbout h1,
+.startedAbout h1 {
+  margin-bottom: 19px;
+  color: rgb(37, 37, 37);
+}
+.startedAbout {
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.startedAbout h1 {
+  text-align: center;
+}
+
+.startedAbout h3 {
+  font-size: 23px;
+  background: $gradient-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.startedAbout p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  max-width: 60ch;
+}
+.startedAbout img {
+  border-radius: 8%;
+  border: 4px rgb(235, 235, 235) solid;
+  max-width: 500px;
+}
+
+@media (width <850px) {
+  .aboutPage {
+    padding: 40px 0;
+  }
+  .con {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .startedAbout img {
+    max-width: 320px;
+  }
+  .genAbout {
+    margin-top: 10px;
+    margin-bottom: 27px;
+  }
+  .genAbout h1 {
+    font-size: 25px;
+  }
+  .startedAbout h1 {
+    font-size: 30px;
+  }
+  .genAbout p {
+    padding: 0 28px;
+  }
+}
+@media (width <650px) {
+  .startedAbout h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}

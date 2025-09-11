@@ -131,10 +131,6 @@ h1 span {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
 .logos-slide {
   display: inline-block;
   animation: slider 21s infinite linear;
@@ -250,9 +246,9 @@ h1 span {
 }
 #backToTop {
   position: fixed;
+
   bottom: 30px;
   right: 30px;
-
   background-color: #191c1f;
   border-bottom: rgba(255, 255, 255, 0.849) 0.2px solid;
   border-top: rgb(255, 255, 255, 0.849) 0.2px solid;
@@ -265,7 +261,7 @@ h1 span {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 150;
 
   &:hover {
     opacity: 0.85;
@@ -273,9 +269,6 @@ h1 span {
   }
 }
 
-#backToTop {
-  z-index: 150;
-}
 // *************RESPONSIVE***********
 @media (width<1085px) {
   .continar img {
