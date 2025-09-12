@@ -19,7 +19,10 @@
       </li>
     </ul>
     <div class="sign" [class.active]="isMenuOpen">
-      <a style="text-decoration: none; color: white" routerLink="/download-app"
+      <a
+        style="text-decoration: none; color: white"
+        routerLink="/download-app"
+        (click)="closeMenu()"
         ><button>Download the app</button></a
       >
     </div>

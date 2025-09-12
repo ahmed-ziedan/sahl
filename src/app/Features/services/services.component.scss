@@ -1,0 +1,41 @@
+.servicesPage {
+  background-color: rgb(120, 136, 255);
+  padding: 70px 50px;
+}
+.description {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.description h1 {
+  font-size: 37px;
+}
+.description h4 {
+  font-weight: 600;
+}
+.ServicesWrapper {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #ffffff;
+  width: 24.25em;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px #6592e6;
+  padding: 30px;
+  margin: 15px;
+  margin-left: 0;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+.card i {
+  color: rgb(120, 136, 255);
+  font-size: 29px;
+  margin-bottom: 17px;
+}
